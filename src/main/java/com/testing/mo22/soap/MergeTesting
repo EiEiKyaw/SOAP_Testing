@@ -1,0 +1,8 @@
+package com.testing.mo22.soap;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+public class MergeTesting {
+
+}
