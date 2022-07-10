@@ -4,6 +4,6 @@ public class MergeTesting {
 
 	private int totalQty;
 	
-	private String desc;
+	private String description;
 
 }
