@@ -7,7 +7,7 @@
 		<version>2.7.1</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.testing.mo22</groupId>
+	<groupId>com.testing.my22.soap</groupId>
 	<artifactId>soap_web_service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>soap_web_service</name>

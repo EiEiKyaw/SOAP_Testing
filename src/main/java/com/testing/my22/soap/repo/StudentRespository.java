@@ -1,4 +1,4 @@
-package com.testing.mo22.soap;
+package com.testing.my22.soap.repo;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,8 @@ import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import com.howtodoinjava.xml.school.Student;
+import com.testing.my22.soap.entity.Student;
+
 
 @Component
 public class StudentRespository {
@@ -38,6 +39,7 @@ public class StudentRespository {
 	
 	public Student findStudent(String name) {
 		Assert.notNull(name, "The Student's name must not be null");
+		System.out.println(students.get(name));
 		return students.get(name);
 	}
 

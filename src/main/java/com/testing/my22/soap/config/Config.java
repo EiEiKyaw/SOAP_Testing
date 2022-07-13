@@ -1,4 +1,4 @@
-package com.testing.mo22.soap;
+package com.testing.my22.soap.config;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -23,12 +23,12 @@ public class Config extends WsConfigurerAdapter {
 		return new ServletRegistrationBean<>(servlet, "/service/*");
 	}
 
-	@Bean
+	@Bean(name = "studentDetailsWsdl")
 	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema countriesSchema) {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
 		wsdl11Definition.setPortTypeName("StudentDetailsPort");
 		wsdl11Definition.setLocationUri("/service/student-details");
-		wsdl11Definition.setTargetNamespace("http://www.howtodoinjava.com/xml/school");
+		wsdl11Definition.setTargetNamespace("http://www.testing.com/my22/soap/entity");
 		wsdl11Definition.setSchema(countriesSchema);
 		return wsdl11Definition;
 	}

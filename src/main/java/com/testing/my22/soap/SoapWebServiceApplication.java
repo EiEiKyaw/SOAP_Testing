@@ -1,4 +1,4 @@
-package com.testing.mo22.soap;
+package com.testing.my22.soap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
